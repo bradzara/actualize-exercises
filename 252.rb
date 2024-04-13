@@ -3,11 +3,13 @@
 # Then run the method and print the result. 
 # (Note: you do not need to make a custom class for this exercise, just a method)
 
-numbers = [5, 3, 6, 24]
-puts numbers.sum
+def numbers(num1, num2, num3, num4)
+  return num1 + num2 + num3 + num4
+end
 
+add_numbers = numbers(4, 8, 12, 14)
+puts add_numbers
 
-# QUESTION 2
 # Write a class called Shoe that stores attributes for name, color, and price.
 # Then make an instance of a shoe and print out the details using `pp`.
 # (Note: for this problem, just make the initialize method in the class, no other methods needed)
