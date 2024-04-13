@@ -53,3 +53,6 @@ end
 product = Product.new({"name" => "Table", "price" => 500, "description" => "Solid oak"}) # FIX THIS LINE
 
 puts "The product's name is #{product.name}."
+
+# The program is expecting for you to initialize the "product" with a hash instead of three seperate arguments
+# Since the class itself only has one argument, you can not give it more than three
