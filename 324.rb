@@ -21,3 +21,8 @@ while index < numbers.length
 end
 
 pp new_numbers
+
+# First I created an empty array called new_numbers 
+# Then I wrote a loop where I stored ALL the numbers from the original array into the new array, just to make sure it worked
+# Then I researched and found the .include? method that checks to see if a value that is given as an argument is already in the new loop or not
+# Lastly, I created a conditional statement and combined it with the push method that I already had created in step two to add the number from the original array, if it wasn't included already
