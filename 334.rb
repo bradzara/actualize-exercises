@@ -11,7 +11,7 @@
 # The program will say: "apple was your most common word"
 # (That's because apple appeared in the user's list 4 times, more than any other word.)
 
-words = []                  # I started by making an empty array and writing a loop to get ten words for the user
+words = []                  # I started by making an empty array and writing a loop to get ten words from the user and then storing it in the empty array
 puts "Enter ten words:"     
 10.times do
   user_entry = gets.chomp
@@ -20,24 +20,9 @@ end
 
 dup_words = Hash.new(0)     # Then I created an empty hash to sort the words entered by the user
 
-words.each do |count|       # This loop is to iterate through the words loop and store them in the dup_words loop with a counter for each word
+words.each do |count|       # This loop is to iterate through the words loop and store them in the dup_words hash with a counter for each word
   dup_words[count] += 1
 end
 
-pp dup_words
-
-# most_dups = count[0]
-# index = 1
-# while index < words.length
-#   higest = count[index]
-#   if count > most_dups
-#     most_dups = highest
-#   end
-#   index = index + 1
-# end
-
-# dup_words.each do |words, count|
-#   puts "#{words} appears #{count} times."
-# end
-
-
+key_with_max_value = dup_words.max_by { |k, v| v }[0]   # Lastly, I created a variable that will sort through my dup_words hash to find the highest value by key
+puts "#{key_with_max_value} is your most common word."
