@@ -7,5 +7,5 @@ file = File.open("example.txt", "w")
 
 file.write("This is an example!")
 
-file.close
+file.closed
 
