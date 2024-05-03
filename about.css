@@ -1,0 +1,57 @@
+body{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color: rgb(28, 60, 69);
+  margin: 0;
+}
+
+main{
+  max-width: 50em;
+  margin: 0 auto;
+  line-height: 1.5;
+  padding: 4em 1em;
+}
+
+header a{
+  border: 1px solid #e81c4f;
+  border-radius: 2em;
+  color: rgb(253, 251, 251);
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  transition-property: color, background;
+  transition-duration: 200ms;
+}
+
+header a:hover{
+  background: #e81c4f;
+  color: white;
+}
+
+h2{
+  margin-top: 1em;
+  padding-top: 1em;
+  color: rgb(36, 36, 36);
+}
+
+header{
+  background-image: url("https://images.unsplash.com/photo-1493243350443-9e3048ce7288?q=80&w=2552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  line-height: 1.2;
+  padding: 10vw 2em;
+}
+
+header h1{
+  color: white;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+footer{
+  color: rgb(9, 9, 9);
+  text-align: center;
+  padding: 2em;
+  background-color: rgb(174, 171, 171);
+}
